@@ -42,3 +42,10 @@ SELECT `id`,`date`,`hour`,`location`,`address` FROM `exams` WHERE `date` LIKE '2
 ### 6. Selezionare tutti i corsi di laurea magistrale (38)
 
 SELECT \* FROM `degrees` WHERE `level` LIKE 'magistrale';
+
+<br>
+<br>
+
+### 7. Da quanti dipartimenti è composta l'università? (12)
+
+SELECT COUNT(\*) AS 'NUMBER OF DEPARTMENTS' FROM `departments`;
