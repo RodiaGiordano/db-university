@@ -24,4 +24,4 @@ SELECT `id`,`name`,`period`,`year` FROM `courses` WHERE `period` LIKE "I %" AND 
 
 SELECT `id`,`date`,`hour`,`location`,`address` FROM `exams` WHERE `date` LIKE '2020-06-20' AND TIME(`hour`) > '14%';
 
-{{DA TORNARCI}}
+{{DA TORNARCI}} -
