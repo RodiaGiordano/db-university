@@ -16,7 +16,7 @@ SELECT `id`,`name`,`surname`,`date_of_birth` FROM `students` WHERE DAY(`date_of_
 ### 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
 
 laurea (286)
-SELECT `id`,`name`,`period`,`year` FROM `courses` WHERE `period` LIKE "I semestre" AND `year` = 1 ORDER BY `courses`.`year` ASC;
+SELECT `id`,`name`,`period`,`year` FROM `courses` WHERE `period` LIKE "I %" AND `year` = 1 ORDER BY `courses`.`year` ASC;
 
 ### 5. Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del
 
