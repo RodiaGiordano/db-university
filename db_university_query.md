@@ -9,9 +9,9 @@ SELECT `id`,`name`,`cfu`,`website` FROM `courses` WHERE `cfu` > 10 ORDER BY `cou
 
 ### 3. Selezionare tutti gli studenti che hanno più di 30 anni
 
-SELECT `id`,`name`,`surname`,`date_of_birth` FROM `students` WHERE DAY(`date_of_birth`) > 30 ORDER BY `name`;
-
-{{ nella traccia non c'era scritto il risultato giusto, penso sia 90}}
+SELECT `id`,`name`,`surname`,`date_of_birth` FROM `students`
+WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURRENT_DATE) > 30  
+ORDER BY `students`.`date_of_birth` ASC
 
 ### 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
 
