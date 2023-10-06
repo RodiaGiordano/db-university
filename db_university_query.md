@@ -21,3 +21,7 @@ SELECT `id`,`name`,`period`,`year` FROM `courses` WHERE `period` LIKE "I %" AND 
 ### 5. Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del
 
 20/06/2020 (21)
+
+SELECT `id`,`date`,`hour`,`location`,`address` FROM `exams` WHERE `date` LIKE '2020-06-20' AND TIME(`hour`) > '14%';
+
+{{DA TORNARCI}}
